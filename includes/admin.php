@@ -147,8 +147,8 @@ add_action( 'admin_init', 'pmprolpv_admin_init' );
  */
 function pmprolpv_sanitize_limit( $args ) {
 	if ( ! is_numeric( $args['views'] ) ) {
-		$args['views'] = '';
-		$args['period'] = '';
+		$args['views'] = 0;
+		$args['period'] = 'month';
 	}
 
 	return $args;
