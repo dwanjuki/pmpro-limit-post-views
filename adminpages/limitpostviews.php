@@ -58,7 +58,7 @@ function pmprolpv_settings_field_limits( $level_id ) {
 	$limit = pmprolpv_get_level_limit( $level_id );
 
 	$period = ( !empty( $limit['period'] ) ) ? $limit['period'] : 'month';
-	$views = ( !empty( $limit['views'] ) ) ? $limit['views'] : '';
+	$views = ( !empty( $limit['views'] ) ) ? $limit['views'] : 0;
 	?>
 	<input size="2" type="number" id="level_<?php echo esc_attr( $level_id ); ?>_views"
 	       name="pmprolpv_limit_<?php echo esc_attr( $level_id ); ?>[views]" value="<?php echo esc_attr( $views ); ?>">
