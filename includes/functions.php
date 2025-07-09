@@ -8,7 +8,7 @@
  */
 function pmprolpv_get_level_limit( $level_id ) {
 	$default_option = array(
-		'views' => '',
+		'views' => 0,
 		'period' => 'month',
 	);
 	return get_option( 'pmprolpv_limit_' . $level_id, $default_option );	
